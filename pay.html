@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>送出訂單</title>
+    <link rel="stylesheet" href="pay.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    <header>
+
+        <a href="index.html">
+            <img src="image/logo.png" alt="" class="logo">
+        </a>
+    
+        <div class="icon">
+            <a href="login.html"><img src="image/member.png" alt="" class="member"></a>
+            <a href="shoppingcart.html"><img src="image/shopping_car.png" alt="" class="car"></a>
+        </div>
+    
+        <hr style="width: 83%;margin-top: 5.25%;margin-left: 4.5%; border:0.1px solid #404258;">
+         <nav>
+            <ul>
+                <li><a href="chinchilla.html">龍貓</a></li>
+                <li><a href="castle.html">霍爾の移動城堡</a></li>
+                <li><a href="witch.html">魔女宅急便</a></li>
+                <li><a href="hidden.html">神隱少女</a></li>
+                <li><a href="sky.html">天空の城</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <section class="checkout">
+            <h2>確認訂單</h2>
+            <div class="payment">
+              <h3>付款方式:</h3>
+              <div class="payment-options">
+                <div class="option">
+                  <input type="radio" id="credit-card" name="payment" value="credit-card">
+                  <label for="credit-card">信用卡</label>
+                </div>
+    
+                <div class="option">
+                  <input type="radio" id="paypal" name="payment" value="paypal">
+                  <label for="paypal">ATM轉帳</label>
+                </div>
+    
+                <div class="option">
+                  <input type="radio" id="paypal" name="payment" value="paypal">
+                  <label for="paypal">宅配到府</label>
+                </div>
+    
+                <div class="option">
+                  <input type="radio" id="paypal" name="payment" value="paypal">
+                  <label for="paypal">超商貨到付款</label>
+                </div>
+            </div>
+          </div>
+    
+          <div class="address">
+            <h3>付款人資訊:<h4 style="color: red;">(備註:選擇宅配才需填寫地址欄位)</h4></h3>
+            <form>
+              <div class="title">
+                <label for="name">姓名:</label>
+                <input type="text" id="name">    
+              </div>
+       
+              <div class="title">
+                <label for="phone">電話:</label>
+                <input type="text" id="phone">  
+              </div>  
+    
+              <div class="title">
+                <label for="E-mail">E-mail:</label>
+                <input type="text" id="E-mail">
+              </div>
+    
+              <div class="title">
+                <label for="address">送貨地址:</label>
+                <input type="text" id="address">
+              </div>
+    
+            </form>
+          </div>
+    
+          <a href="#">
+            <button class="confirm-btn">送出訂單</button>
+          </a>
+          
+        </section>
+    </article>
+    
+      <footer  style="position: absolute;bottom: -30%;">
+        <h4>Copyright © since 2023 吉卜力-橡子共和國 All Rights Reserved.<br></h4> 
+      </footer>
+    
+</body>
+</html>

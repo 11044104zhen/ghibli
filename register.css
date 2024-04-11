@@ -1,0 +1,58 @@
+body{
+    background-color: #D8E6E7;
+}
+
+a{
+    text-decoration: none;
+}
+
+.form-container {
+    background-image: url(image/bgphoto2.jpg);
+    background-repeat: no-repeat;
+    width: 300px;
+    margin: 8.5% 0 0 41%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.wrapper img{ 
+    margin-left: 11%;
+}
+  
+.form-group {
+    margin: 5px 20px 40px 35px;
+}
+  
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+  
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 80%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+  
+form button[type="submit"] {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 100px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+}
+  
+form button[type="submit"]:hover {
+    background-color: gray;
+}

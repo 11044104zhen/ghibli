@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="shoppingcart.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="image/logo.png" alt="" class="logo">
+        </a>
+        
+        <div class="icon">
+            <a href="login.html"><img src="image/member.png" alt="" class="member"></a>
+            <a href="shoppingcart.html"><img src="image/shopping_car.png" alt="" class="car"></a>
+        </div>
+
+        <hr style="width: 83%;margin-top: 5.25%;margin-left: 4.6%; border:0.1px solid #404258;">
+         <nav>
+            <ul>
+                <li><a href="chinchilla.html">龍貓</a></li>
+                <li><a href="castle.html">霍爾の移動城堡</a></li>
+                <li><a href="witch.html">魔女宅急便</a></li>
+                <li><a href="hidden.html">神隱少女</a></li>
+                <li><a href="sky.html">天空の城</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cart">
+        <h1>我的購物車</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>商品</th>
+              <th>價格</th>
+              <th>數量</th>
+              <th>小計</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="image/castle2.jpg" alt="商品1">
+                <span>霍爾の移動城堡別針收藏(單品)</span>
+              </td>
+              <td>NT$200</td>
+              <td>
+                <input type="number" value="1" min="1">
+              </td>
+              <td>NT$200</td>
+              <td>
+                <button class="remove-btn">移除</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="image/chinchilla6.jpg" alt="商品2">
+                <span>龍貓垂直刺繡帆布袋</span>
+              </td>
+              <td>NT$835</td>
+              <td>
+                <input type="number" value="1" min="1">
+              </td>
+              <td>NT$835</td>
+              <td>
+                <button class="remove-btn">移除</button>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                  <img src="image/witch3.jpg" alt="商品3">
+                  <span>乾花蘆葦擴香器-白茶</span>
+                </td>
+                <td>NT$1010</td>
+                <td>
+                  <input type="number" value="2" min="1">
+                </td>
+                <td>NT$2020</td>
+                <td>
+                  <button class="remove-btn">移除</button>
+                </td>
+              </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">總計</td>
+              <td>NT$3055</td>
+            </tr>
+          </tfoot>
+        </table>
+        <div class="btn">
+            <button class="checkout-btn" onclick="location.href='index.html'">繼續購物</button>  
+            <button class="checkout-btn1" onclick="location.href='pay.html'">結帳</button> 
+            
+        </div>
+
+    </section>
+      
+    <footer style="position: absolute;bottom: -30%; ">
+        <h4>Copyright © since 2023 吉卜力-橡子共和國 All Rights Reserved.</h4> 
+    </footer>
+
+</body>
+</html>

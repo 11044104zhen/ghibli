@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吉卜力-橡子共和國</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <header>
+        <div class="t-search">
+            <form class="searchForm">
+                <input type="text" class="searchText" placeholder="Search...">
+                <button type="submit" class="searchIcon">
+                    <img src="image/search.png" width="20px">
+                </button>
+            </form>
+        </div>
+
+        <a href="index.html">
+            <img src="image/logo.png" alt="" class="logo">
+        </a>
+
+        <div class="icon">
+            <a href="login.html"><img src="image/member.png" alt="" class="member"></a>
+            <a href="shoppingcart.html"><img src="image/shopping_car.png" alt="" class="car"></a>
+        </div>
+
+        <hr style="width: 90%;margin-top: 2%;margin-left: 5%; border:0.1px solid #404258;">
+         <nav>
+            <ul>
+                <li><a href="chinchilla.html">龍貓</a></li>
+                <li><a href="castle.html">霍爾の移動城堡</a></li>
+                <li><a href="witch.html">魔女宅急便</a></li>
+                <li><a href="hidden.html">神隱少女</a></li>
+                <li><a href="sky.html">天空の城</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <section>
+            <div class="w3-content w3-display-container" style="margin:15% 0% 0% 22%">
+                <img class="mySlides" src="image/photo1.jpg" style="width:110%">
+                <img class="mySlides" src="image/photo2.jpg" style="width:110%">
+                <img class="mySlides" src="image/photo3.jpg" style="width:110%">
+              
+                <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="right"  onclick="plusDivs(1)" style="margin:0px 0px 0px 0px">&#10095;</button>
+              </div>
+              
+              <script>
+              var slideIndex = 1;
+              showDivs(slideIndex);
+              
+              function plusDivs(n) {
+                showDivs(slideIndex += n);
+              }
+              
+              function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                }
+                x[slideIndex-1].style.display = "block";  
+              }
+              </script>
+        </section>
+
+        <section class="hotsale">
+            <h2 class="hotsale-text">熱銷商品</h2>
+                <div class="hotsale-card">
+                    <div class="top1"> TOP 1</div>
+                    <a href="product.html">
+                        <img src="image/hot1.jpg" class="hot1" alt="">
+                        <p>【POKO POKO 馬克杯】 NT$630</p>
+                    </a>
+                </div>
+
+                <div class="hotsale-card">
+                    <div class="top2">TOP 2</div>
+                    <a href="product.html">
+                        <img src="image/hot2.jpg" class="hot2" alt="">
+                        <p>【龍貓特製玉米禮盒】 NT$1620</p>
+                    </a>
+                </div>
+                <div class="hotsale-card">
+                    <div class="top3">TOP 3</div>
+                    <a href="product.html">
+                        <img src="image/hot3.jpg" class="hot3" alt="">
+                        <p>【乾花蘆葦擴香器】 NT$1010</p>
+                    </a>
+                </div> 
+        </section>
+
+    </article>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <button type="button" id="BackTop" class="toTop-arrow"></button>
+    <script>
+        $(function(){
+	        $('#BackTop').click(function(){ 
+		        $('html,body').animate({scrollTop:0}, 333);
+	        });
+	        $(window).scroll(function() {
+		        if ( $(this).scrollTop() > 300 ){
+			        $('#BackTop').fadeIn(222);
+		        } else {
+			        $('#BackTop').stop().fadeOut(222);
+		        }
+	        }).scroll();
+            });
+    </script>
+
+
+
+<footer>
+    <h6 style="font-weight: bold;">Copyright © since 2023 吉卜力-橡子共和國 All Rights Reserved.<br></h6> 
+</footer>
+
+
+
+</body>
+</html>

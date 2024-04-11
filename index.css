@@ -1,0 +1,282 @@
+body{
+    margin: 0;
+    background-attachment: fixed;
+}
+
+ 
+header{
+    background-color: #D8E6E7 ;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 20%;
+    z-index: 1;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 80px;
+    justify-content: center;
+    background-color: #D8E6E7;
+}
+
+.searchForm {
+    display: flex;
+    margin-top: 2%;
+    margin-left: 9%;
+}
+.searchText {
+    background-color: white;
+    opacity: 0.6;
+    font-size: medium;
+    width: 180px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    border-radius: 25px 0 0 25px;
+}
+.searchIcon{
+    padding: 0px 15px ;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    background-color: white;
+    opacity: 0.6;
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    left: 42.5%;
+    height: 50%;
+    width: 15%;
+}
+
+.icon{
+    position: absolute;
+    top: 20%;
+    left: 83%;
+    
+}
+
+.member{
+    height: 17%;
+    width: 11%;
+    margin-right: 3%;
+}
+
+.car{
+    height: 17%;
+    width: 11%;
+}
+
+
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+header a:hover{
+    color: gray;
+    
+}
+
+nav{
+    position: absolute;
+    top: 70%;
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    letter-spacing: 5px;
+}
+li{
+    display: inline-block;
+    margin: 0em 0em 0em 12.75em;;
+}
+
+.left{
+    width: 5%;
+    height: 45px;
+    border: white;
+    background-color: white;
+    opacity: 0.7;
+    position: absolute;
+    top: 45%;
+}
+
+.right{
+    width: 5%;
+    height: 45px;
+    border: white;
+    background-color: white;
+    opacity: 0.7;
+    position: absolute;
+    top: 45%;
+    left: 105%;
+
+}
+
+.hotsale {
+    background: #EFF5F5;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% auto;
+    justify-items: center;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.hotsale a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hotsale h2 {
+    font-weight: bold;
+    color: #850000;
+    text-shadow: 0 0 8px #FFDB89;
+    grid-column: span 3;
+    font-size: 45px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hotsale .hotsale-card {
+    height: 50vh;
+    width: 70%;
+    background: rgb(255, 255, 255);
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.hotsale .hotsale-card:hover {
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(102, 102, 102, 0.5);
+    box-shadow: 5px 5px 15px 5px rgba(102, 102, 102, 0.5);
+}
+
+.hot1 {
+    width: 100%;
+    height: 100%;
+
+}
+
+.hot2 {
+    width: 100%;
+    height: 100%;
+}
+
+.hot3{
+    width: 100%;
+    height: 100%;
+}
+
+.hotsale .hotsale-card p {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #181823;
+    color: white;
+    font-size: 20px;
+}
+
+.top1 {
+    position: absolute;
+    color: white;
+    background-color: #FFB100;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.top2{
+    position: absolute;
+    color: white;
+    background-color: #C8C2BC;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.top3{
+    position: absolute;
+    color: white;
+    background-color: #B05B3B;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.toup{
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 900;
+}
+
+.toup:hover{
+    color: rgb(80, 78, 78);
+
+}
+
+.toTop-arrow {
+	width: 5.5rem;
+	height: 5.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #3D5656;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 31px;
+	height: 7px;
+	border-radius: 3px;
+	background: white;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 1.2rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 1.2rem;
+}
+.toTop-arrow:focus {outline: none;}
+
+
+footer {
+    width: 100%;
+    height: 80px;
+    float: left;
+    padding: 20px 0;
+    text-align: center;
+    background: #D8E6E7;
+} 
